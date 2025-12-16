@@ -1,8 +1,9 @@
-🛡️ Analisador de Logs do Linux
+# Analisador de Logs de Segurança - Linux
 
-Projeto desenvolvido para treinar análise de logs em Segurança da Informação.
+Script em Bash para análise básica de logs de autenticação no Linux, com foco em aprendizado prático de segurança da informação e rotinas de SOC / Blue Team.
 
-📌 Objetivo
+
+ Objetivo:
 
 Criar um script em Bash capaz de:
 
@@ -16,40 +17,52 @@ Exibir sessões abertas e fechadas
 
 Gerar um mini relatório de segurança
 
-📜 Código:
-#!/bin/bash
 
-echo "===== Relatório de Logs de Segurança ====="
-echo ""
 
-echo "[1] Tentativas de login com falha:"
-sudo grep "Failed password" /var/log/auth.log | tail -n 10
-echo ""
+## Como era inicialmente
 
-echo "[2] Erros de autenticação sudo:"
-sudo grep "sudo" /var/log/auth.log | tail -n 10
-echo ""
-
-echo "[3] Logins bem-sucedidos:"
-sudo grep "session opened" /var/log/auth.log | tail -n 10
-echo ""
-
-🧪 Exemplo de saída real:
-sudo: gabriel : TTY=pts/0 ; PWD=/home/gabriel ; USER=root ;
-COMMAND=/usr/bin/tail -n 20 /var/log/auth.log
+Na primeira versão, o script realizava apenas a leitura dos principais eventos do arquivo `/var/log/auth.log`,
+exibindo tentativas de login com falha, logins bem-sucedidos e eventos relacionados ao uso de sudo.
 
 
 
-🧠 Habilidades demonstradas
+## Estado atual do projeto
 
-Linux
+Atualmente, o script:
 
-Logs de segurança (auth.log)
+- Organiza os eventos por tipo
+- Conta tentativas de login com falha
+- Conta eventos de uso do sudo
+- Gera um relatório simples e direto no terminal
+- Simula uma análise básica de logs comum em ambientes SOC N1
 
-Comandos sudo
 
-Bash scripting
 
-Interpretação de eventos de autenticação
+## Evolução
+
+Este projeto foi evoluindo aos poucos, conforme o aprendizado em análise de logs e fundamentos de segurança.
+
+As melhorias foram feitas com o objetivo de transformar um script simples
+em algo mais próximo de uma rotina real de análise de segurança.
+
+
+
+
+## Tecnologias e conceitos
+
+- Linux
+- Bash Script
+- Análise de logs
+- Autenticação e autorização
+- Conceitos de SOC / Blue Team
+ de autenticação
+
+
+## Como executar
+
+```bash
+chmod +x analisador_logs.sh
+./analisador_logs.sh
+
 
 echo "Relatório gerado em: $(date)"
