@@ -57,16 +57,6 @@ em algo mais próximo de uma rotina real de análise de segurança.
 - Conceitos de SOC / Blue Team
  de autenticação
 
-
-## Como executar
-
-```bash
-chmod +x analisador_logs.sh
-./analisador_logs.sh
-
-
-echo "Relatório gerado em: $(date)"
-
 🔄 Atualizações do Projeto
 
 Este projeto passou por algumas melhorias desde a versão inicial, com foco em tornar o script mais organizado, funcional e fácil de entender.
@@ -86,3 +76,14 @@ Objetivo das mudanças
 As alterações foram feitas para deixar o projeto mais consistente e próximo de um cenário real de uso, servindo também como prática de análise de logs em ambiente Linux.
 
 O projeto continua em evolução e novas melhorias poderão ser adicionadas conforme o aprendizado avança.
+
+
+## Como executar
+
+```bash
+chmod +x analisador_logs.sh
+./analisador_logs.sh
+
+
+echo "Relatório gerado em: $(date)"
+
