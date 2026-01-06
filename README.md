@@ -66,3 +66,23 @@ chmod +x analisador_logs.sh
 
 
 echo "Relatório gerado em: $(date)"
+
+🔄 Atualizações do Projeto
+
+Este projeto passou por algumas melhorias desde a versão inicial, com foco em tornar o script mais organizado, funcional e fácil de entender.
+
+O que foi atualizado
+
+Ajustes no script de análise de logs para melhorar a leitura e o processamento das informações
+
+Pequenas correções na lógica do código
+
+Organização melhor do fluxo do script
+
+Atualização do README para refletir melhor o funcionamento atual do projeto
+
+Objetivo das mudanças
+
+As alterações foram feitas para deixar o projeto mais consistente e próximo de um cenário real de uso, servindo também como prática de análise de logs em ambiente Linux.
+
+O projeto continua em evolução e novas melhorias poderão ser adicionadas conforme o aprendizado avança.
